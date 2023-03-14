@@ -3,20 +3,22 @@ body {
     background-size: cover;
 }
 .name {
-    font-size: 3em;
+    font-size: 5em;
     margin: 0;
     color: whitesmoke;
+    text-align: center;
 }
 
 .position {
-    font-size: 1.5em;
+    font-size: 3em;
     margin: 0;
     color: whitesmoke;
+    text-align: center; 
 }
 
 .photo {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 280px;
     border-radius: 50%;
     margin: 20px 0;
 }
@@ -38,6 +40,28 @@ body {
 .contact li {
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #4bf2b5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border:2px solid black;
+}
+
+.contact h4 {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #4bf2b5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border:2px solid black;
+}
+
+.box-contact {
+    padding: 20px;
+    background-color: #3de3d8;
+    color: black;
+    border-radius: 20px;
 }
 
 .contact a {
@@ -46,26 +70,52 @@ body {
 }
 
 .work-experience {
-    margin: 20px 0;
+    margin: 40px 0;
+    margin-bottom: 20px;
     align-content: space-around;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: #3de3d8;
+    color: white;
+    border-radius: 20px;
+}
+.work-experience li {
+    display: flex;
+    flex-direction: column;
 }
 
 .work-experience h4 {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    display: flex;
     margin: 0;
 }
 
 .work-experience p {
+    display: flex;
     margin: 0;
     color: #666;
 }
 
 .work-experience ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column_title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 .skills {
@@ -83,41 +133,57 @@ body {
 .skills li {
     margin-right: 10px;
     margin-bottom: 10px;
-    background-color: #eee;
+    background-color: #4bf2b5;
     padding: 5px 10px;
     border-radius: 5px;
+    border:2px solid black;
+
+}
+.box {
+    display: flex;
 }
 
-::marker {
-    unicode-bidi: isolate;
-    font-variant-numeric: tabular-nums;
-    text-transform: none;
-    text-indent: 0px !important;
-    text-align: start !important;
-    text-align-last: start !important;
-}
-
-.interests {
+.interests_and_education {
     margin: 20px 0;
 }
 
-.interests ul {
+.interests_and_education ul {
     list-style-type: none;
-    margin: 0;
+    margin: 5px;
     padding: 0;
 }
-
-.education {
-    margin: 20px 0;
+.interests_and_education li{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
 }
 
-.education h4 {
-    margin: 0;
+.interests_and_education li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    left: 0;
 }
 
-.education p {
+.interests_and_education h3 {
     margin: 0;
+    bottom: 0;
+}
+
+.interests_and_education p {
+    margin: 0;
+    bottom: 0;
     color: #666;
+}
+
+.interests_and_education p::first-line {
+    color: red;
+    text-transform: uppercase;
 }
 
 .portfolio {
