@@ -8,105 +8,103 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
-    <header>
-        <h1 class="name">Daniel Sakharov</h1>
-        <h2 class="position">Developer && mipt student</h2>
+    <header class="header">
+        <h1 class="header__name">Daniel Sakharov</h1>
+        <h2 class="header__position">Developer && mipt student</h2>
     </header>
-    <main>
+    <main class="main">
         <section class="contact">
-            <div class="box-contact">
-                <div class="bbox-photo">
-                    <img class="photo" src="i.jpg" alt="Profile Picture">
+            <div class="contact__box">
+                <div class="contact__photo-box">
+                    <img class="contact__photo" src="i.jpg" alt="Profile Picture">
                 </div>
-                <div class="bbox-contact">
-                    <h4 class="contact-title">My Contacts:</h4>
-                    <ul class="contact-list">
-                        <li class="element-list-contact"><a class="contact-a" href="mailto:myemail@example.com">myemail@example.com</a></li>
-                        <li class="element-list-contact"><a class="contact-a" href="tel:+1234567890">+1234567890</a></li>
-                        <li class="element-list-contact"><a class="contact-a" href="https://www.vk.com/grgtr1">VK</a></li>
-                        <li class="element-list-contact"><a class="contact-a" href="https://github.com/grgtr">GitHub</a></li>
+                <div class="contact__info-box">
+                    <h4 class="contact__title">My Contacts:</h4>
+                    <ul class="contact__list">
+                        <li class="contact__list-item"><a class="contact__link" href="mailto:myemail@example.com">myemail@example.com</a></li>
+                        <li class="contact__list-item"><a class="contact__link" href="tel:+1234567890">+1234567890</a></li>
+                        <li class="contact__list-item"><a class="contact__link" href="https://www.vk.com/grgtr1">VK</a></li>
+                        <li class="contact__list-item"><a class="contact__link" href="https://github.com/grgtr">GitHub</a></li>
                     </ul>
                 </div>
             </div>
         </section>
         <section class="work-experience">
-            <h3 class="we-column-title">Work Experience</h3>
-            <ul class="we-columns">
-                <li>
-                    <h4 class="we-h4">C++ Developer</h4>
-                    <p class="we-p">Company X, January 2021 - Present</p>
-                    <ul class="we-column">
-                        <li class="we-descript">Lorem ipsum dolor sit amet. </li>
-                        <li class="we-descript">Lorem ipsum dolor sit amet. </li>
-                        <li class="we-descript">Lorem ipsum dolor sit amet. </li>
-                        
+            <h3 class="work-experience__title">Work Experience</h3>
+            <ul class="work-experience__columns">
+                <li class="work-experience__column">
+                    <h4 class="work-experience__column-title">C++ Developer</h4>
+                    <p class="work-experience__column-paragraph">Company X, January 2021 - Present</p>
+                    <ul class="work-experience__description-list">
+                        <li class="work-experience__description-item">Lorem ipsum dolor sit amet. </li>
+                        <li class="work-experience__description-item">Lorem ipsum dolor sit amet. </li>
+                        <li class="work-experience__description-item">Lorem ipsum dolor sit amet. </li>
                     </ul>
                 </li>
-                <li>
-                    <h4 class="we-h4">Linux Admin</h4>
-                    <p class="we-p">Company Y, June 2020 - December 2021</p>
-                    <ul class="we-column">
-                        <li class="we-descript">Lorem ipsum dolor sit amet.</li>
-                        <li class="we-descript">Lorem ipsum dolor sit amet.</li>
-                        <li class="we-descript">Lorem ipsum dolor sit amet.</li>
+                <li class="work-experience__column">
+                    <h4 class="work-experience__column-title">Linux Admin</h4>
+                    <p class="work-experience__column-paragraph">Company Y, June 2020 - December 2021</p>
+                    <ul class="work-experience__description-list">
+                        <li class="work-experience__description-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="work-experience__description-item">Lorem ipsum dolor sit amet.</li>
+                        <li class="work-experience__description-item">Lorem ipsum dolor sit amet.</li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <section class="skills">
-            <h3 class="skills-h3">My Skills:</h3>
-            <ul class="skills-list">
-                <li class="skills-list-elemnt">HTML5</li>
-                <li class="skills-list-elemnt">CSS3</li>
-                <li class="skills-list-elemnt">JavaScript</li>
-                <li class="skills-list-elemnt">SQL</li>
-                <li class="skills-list-elemnt">Responsive design</li>
-                <li class="skills-list-elemnt">Git</li>
-                <li class="skills-list-elemnt">C++</li>
-                <li class="skills-list-elemnt">Python, Django</li>
-                <li class="skills-list-elemnt">Linux adminstration</li>
+        <section class="skills-block">
+            <h3 class="skills-block__title">My Skills:</h3>
+            <ul class="skills-block__list">
+                <li class="skills-block__item">HTML5</li>
+                <li class="skills-block__item">CSS3</li>
+                <li class="skills-block__item">JavaScript</li>
+                <li class="skills-block__item">SQL</li>
+                <li class="skills-block__item">Responsive design</li>
+                <li class="skills-block__item">Git</li>
+                <li class="skills-block__item">C++</li>
+                <li class="skills-block__item">Python, Django</li>
+                <li class="skills-block__item">Linux adminstration</li>
             </ul>
         </section>
-        <section class="box-interests-and-education">
-            <section class="iae">
-                <h3 class="iae-h3">Interests</h3>
-                <ul class="iae-ul">
-                    <li class="i-li">Web development</li>
-                    <li class="i-li">Hiking</li>
-                    <li class="i-li">Photography</li>
-                    <li class="i-li">Historical strategy games</li>
-                    <li class="i-li">History</li>
-                    <li class="i-li">Paintings</li>
+        <section class="interests-education-block">
+            <section class="interests-block">
+                <h3 class="interests-block__title">Interests</h3>
+                <ul class="interests-block__list">
+                    <li class="interests-block__item">Web development</li>
+                    <li class="interests-block__item">Hiking</li>
+                    <li class="interests-block__item">Photography</li>
+                    <li class="interests-block__item">Historical strategy games</li>
+                    <li class="interests-block__item">History</li>
+                    <li class="interests-block__item">Paintings</li>
                 </ul>
             </section>
-
-            <section class="iae">
-                <h3 class="iae-h3">Education</h3>
-                <ul class="iae-ul">
-                    <li class="e-li">
-                        <h4>Bachelor of Software Engineering</h4>
-                        <p>MIPT HSSE, September 2022 - May 2026</p>
-                    </li>
-                </ul>
-            </section>
+            <section class="education-block">
+            <h3 class="education-block__title">Education</h3>
+            <ul class="education-block__list">
+                <li class="education-block__item">
+                    <h4 class="education-block__faculty">Bachelor of Software Engineering</h4>
+                    <p class="education-block__period">MIPT HSSE, September 2022 - May 2026</p>
+                </li>
+            </ul>
         </section>
-        <section class="portfolio">
-            <h3>Portfolio</h3>
-            <div class="slider">
-                <img src="project1.jpg" alt="Project 1">
-                <img src="project2.jpg" alt="Project 2">
-                <img src="project3.jpg" alt="Project 3">
-                <img src="project4.jpg" alt="Project 4">
-            </div>
-            <div class="reviews">
-            <h4>Reviews</h4>
-                <ul>
-                    <li>"Dan is a talented web developer with excellent attention to detail. He consistently delivers high-quality work and is a pleasure to work with."</li>
-                    <li>"I was impressed with Daniel's ability to think outside the box and come up with creative solutions to complex problems."</li>
-                    <li>"Daniel is a reliable and dedicated team player who always goes above and beyond to meet project deadlines."</li>
-                </ul>
-            </div>
-        </section>
+    </section>
+    <section class="portfolio-block">
+        <h3 class="portfolio-block__title">Portfolio</h3>
+        <div class="slider-block">
+            <img class="slider-block__image" src="project1.jpg" alt="Project 1">
+            <img class="slider-block__image" src="project2.jpg" alt="Project 2">
+            <img class="slider-block__image" src="project3.jpg" alt="Project 3">
+            <img class="slider-block__image" src="project4.jpg" alt="Project 4">
+        </div>
+        <div class="reviews-block">
+        <h4 class="reviews-block__title">Reviews</h4>
+            <ul class="reviews-block__list">
+                <li class="reviews-block__item">"Dan is a talented web developer with excellent attention to detail. He consistently delivers high-quality work and is a pleasure to work with."</li>
+                <li class="reviews-block__item">"I was impressed with Daniel's ability to think outside the box and come up with creative solutions to complex problems."</li>
+                <li class="reviews-block__item">"Daniel is a reliable and dedicated team player who always goes above and beyond to meet project deadlines."</li>
+            </ul>
+        </div>
+    </section>
     </main>
 </body>
 </html>
