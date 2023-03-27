@@ -28,16 +28,6 @@
     display: flex;
 }
 
-.contact__photo-box {
-    font-size: 35px;
-    display: flex;
-    padding: 20px;
-    background-color: #3de3d8;
-    color: black;
-    border-radius: 20px;
-    flex-direction: column;
-}
-
 .contact__photo {
     width: 250px;
     height: 280px;
@@ -198,7 +188,7 @@
     font-size: 30px;
 }
 
-.box-interests-and-education {
+.interests-education-block {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -283,52 +273,85 @@
     font-size: 30px;
 }
 
-.interests_and_education h3 {
-    margin: 0;
-    bottom: 0;
-}
-
-.interests_and_education p {
-    margin: 0;
-    bottom: 0;
-    color: #666;
-}
-
-.interests_and_education p::first-line {
-    color: red;
-    text-transform: uppercase;
-}
-
 .portfolio-block {
-    margin: 20px 0;
-}
-
-.slider-block {
+    font-size: 30px;
+    margin: 40px 0;
+    margin-bottom: 20px;
+    align-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    background-color: #3de3d8;
+    color: white;
+    border-radius: 20px;
 }
 
-.slider-block__image {
-    width: 30%;
-    margin-bottom: 10px;
-}
-
-.reviews-block {
-    margin-top: 20px;
-}
-
-.reviews-block__title {
+.portfolio-block__title {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    display: flex;
     margin: 0;
+    align-items: center;
+    flex-direction: column;
 }
 
-.reviews-block__list {
+.portfolio-block__columns {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.reviews-block__item {
-    margin-bottom: 10px;
+.portfolio-block__column {
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 50px;
+    background-color: #85DCB0;
+
+    border-radius: 5px;
+    border:2px solid black;
+    font-size: 30px;
+}
+
+.portfolio-block__column-title {
     font-style: italic;
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-block__column-paragraph {
+    display: flex;
+    margin-left: 90px;
+    color: #666;
+    padding: 0;
+}
+
+.portfolio-block__description-list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.portfolio-block__description-item {
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.portfolio-block__description-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    left: 0;
 }
