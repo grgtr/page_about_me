@@ -118,19 +118,21 @@
         </ul>
     </section>
     <section class="gallery">
-        <img src="img/img1.jpg" alt="Image 1" class="gallery-image">
-        <img src="img/img2.jpg" alt="Image 2" class="gallery-image">
-        <img src="img/img3.jpg" alt="Image 3" class="gallery-image">
-        <img src="img/img4.jpg" alt="Image 4" class="gallery-image">
-        <img src="img/img5.jpg" alt="Image 5" class="gallery-image">
+        <a class="gallery__link" href="img/img1.jpg" target="_blank"><img src="img/img1.jpg" alt="Image 1" class="gallery-image"></a>
+        <a class="gallery__link" href="img/img2.jpg" target="_blank"><img src="img/img2.jpg" alt="Image 2" class="gallery-image"></a>
+        <a class="gallery__link" href="img/img3.jpg" target="_blank"><img src="img/img3.jpg" alt="Image 3" class="gallery-image"></a>
+        <a class="gallery__link" href="img/img4.jpg" target="_blank"><img src="img/img4.jpg" alt="Image 4" class="gallery-image"></a>
+        <a class="gallery__link" href="img/img5.jpg" target="_blank"><img src="img/img5.jpg" alt="Image 5" class="gallery-image"></a>
     </section>
-        <section id="popup" class="popup">
+    <section id="popup" class="popup">
+        <div class="popup__overlay">
             <span class="close">&times;</span>
-            <img id="popup-image" src="">
+            <div class="popup__content"></div>
             <a class="prev">&#10094;</a>
             <a class="next">&#10095;</a>
             <script src="js/popupgallery.js"></script>
-        </section>
+        </div>
+    </section>
     <section class="forms">
         <form class="forms__form">
             <h3 class="forms__title">Send me a message</h3>
