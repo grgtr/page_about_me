@@ -1,11 +1,11 @@
-const galleryImages = document.querySelectorAll('.gallery-image');
+const galleryImages = document.querySelectorAll('.gallery__image');
 const links = document.querySelectorAll('.gallery__link');
 const popup = document.getElementById('popup');
-const popupImage = document.getElementById('popup-image');
+const popupImage = document.getElementById('popup__image');
 const closeBtn = document.querySelector('.close');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
-const container = document.querySelector('.popup__content');
+const container = document.querySelector('.popup-div-image');
 const totalImages = galleryImages.length;
 
 let start;
@@ -26,10 +26,10 @@ galleryImages.forEach((image, index) => {
         // Set the current image index and display the popup
         currentImageIndex = index;
         start = true;
-        container.classList.add('popup__content-start');
+        container.classList.add('popup-content-start');
         displayPopup();
         start = false;
-        container.classList.remove('popup__content-start');
+        container.classList.remove('popup-content-start');
 
     });
 });
@@ -66,12 +66,12 @@ function hidePopup() {
 }
 function updatePopupImage() {
     if (!start) {
-        container.classList.remove('popup__content-show');
+        container.classList.remove('popup-content-show');
     }    // Get the image source from the corresponding gallery image
     setTimeout(() => {
         const imageSrc = galleryImages[currentImageIndex].getAttribute('src');
         // Add the image source to the popup image
-        container.innerHTML = `<img class="popup__content-image" id ="popup-image" src="${imageSrc}">`;
+        container.innerHTML = `<img class="popup-content-image" id ="popup__image" src="${imageSrc}">`;
         // Hide the previous button if the current image is the first image
         if (currentImageIndex === 0) {
             prevBtn.style.display = 'none';
@@ -85,7 +85,7 @@ function updatePopupImage() {
             nextBtn.style.display = 'block';
         }
         if (!start) {
-            container.classList.add('popup__content-show');
+            container.classList.add('popup-content-show');
         }
     }, 400);
 
