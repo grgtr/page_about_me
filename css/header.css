@@ -1,0 +1,17 @@
+.body {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+.header__name {
+    font-size: 5em;
+    margin: 0;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header__position {
+    font-size: 3em;
+    margin: 0;
+    color: whitesmoke;
+    text-align: center;
+}

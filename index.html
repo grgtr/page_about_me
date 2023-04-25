@@ -9,7 +9,7 @@
     <meta property="og:image" content="img/i.jpg">
     <title>My Portfolio</title>
     <link rel="icon" href="img/icon.png" sizes="128x128">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="body">
     <header class="header">
@@ -97,7 +97,7 @@
         <ul class="portfolio-block__columns">
             <li class="portfolio-block__column">
                 <h4 class="portfolio-block__column-title">Distributed Events</h4>
-                <p class="portfolio-block__column-paragraph">Rewier, Tech-writer</p>
+                <p class="portfolio-block__column-paragraph">Reviewer, Tech-writer, Backend-developer</p>
                 <ul class="portfolio-block__description-list">
                     <li class="portfolio-block__description-item">September 2022 - Present</li>
                     <li class="portfolio-block__description-item">A platform for facilitating the organization of events</li>
@@ -116,6 +116,32 @@
                 </ul>
             </li>
         </ul>
+    </section>
+    <section class="gallery">
+        <img src="img/img1.jpg" alt="Image 1" class="gallery-image">
+        <img src="img/img2.jpg" alt="Image 2" class="gallery-image">
+        <img src="img/img3.jpg" alt="Image 3" class="gallery-image">
+        <img src="img/img4.jpg" alt="Image 4" class="gallery-image">
+        <img src="img/img5.jpg" alt="Image 5" class="gallery-image">
+    </section>
+        <section id="popup" class="popup">
+            <span class="close">&times;</span>
+            <img id="popup-image" src="">
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+            <script src="js/popupgallery.js"></script>
+        </section>
+    <section class="forms">
+        <form class="forms__form">
+            <h3 class="forms__title">Send me a message</h3>
+            <input class="forms__input" type="text" placeholder="Your name" required id="input_text1" maxlength="30">
+            <span class="input_text1-error"> </span>
+            <input class="forms__input" type="email" placeholder="Your email" required id="input_text2" maxlength="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <span class="input_text2-error"> </span>
+            <input class="forms__input" type="text" placeholder="Text" required id="input_text3" maxlength="200" pattern="">
+            <button class="forms__button" type="submit">Send</button>
+        </form>
+        <script src="js/form.js"></script>
     </section>
     </main>
     <footer class="footer">

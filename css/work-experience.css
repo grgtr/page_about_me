@@ -1,0 +1,113 @@
+.work-experience {
+    font-size: 30px;
+    margin: 40px 0;
+    margin-bottom: 20px;
+    align-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #3de3d8;
+    color: white;
+    border-radius: 20px;
+}
+
+.work-experience__title {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.work-experience__columns {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work-experience__column-title {
+    display: flex;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-experience__column-paragraph {
+    display: flex;
+    margin-left: 20px;
+    color: #666;
+}
+.work-experience__description-list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.work-experience__description-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.work-experience__description-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    padding: 2px;
+    border:2px solid black;
+    background-color: green;
+    border-radius: 50%;
+    left: 0;
+}
+
+@media (max-width: 750px) {
+    .work-experience__title {
+        font-size: 7vw;
+    }
+
+    .work-experience__column {
+        width: 45vw;
+        height: 100vw;
+    }
+
+    .work-experience__column-title {
+        font-size: 5vw;
+    }
+
+    .work-experience__column-paragraph {
+        font-size: 5vw;
+    }
+
+    .work-experience__description-item {
+        left: -30%;
+        font-size: 5vw;
+    }
+
+    .work-experience__description-item::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-10%);
+        width: 5px;
+        height: 5px;
+        padding: 2px;
+        border: 2px solid black;
+        background-color: green;
+        border-radius: 50%;
+        left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .work-experience__column {
+        width: 45vw;
+        height: 150vw;
+    }
+}
