@@ -78,24 +78,18 @@ function toggleSubmitBtn() {
 
 // function to submit form
 function submitForm() {
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", "url/to/submit/form", true);
-    xhr.onload = function () {
-        if (this.status === 200) {
-            submitBtn.textContent = "Sent!";
-            submitBtn.classList.add("sent");
-        } else {
-            submitBtn.disabled = false;
-            submitBtn.classList.remove("disabled");
-            submitBtn.textContent = "Send";
-        }
-    };
-    xhr.onerror = function () {
-        submitBtn.disabled = false;
-        submitBtn.classList.remove("disabled");
+    console.log('submitted');
+    submitBtn.textContent = "Sent!";
+    submitBtn.classList.add("sent");
+    setTimeout(() => {
+        submitBtn.classList.remove("sent");
         submitBtn.textContent = "Send";
-    };
-    xhr.send();
+        submitBtn.classList.remove("disabled");
+        submitBtn.disabled = false;
+        nameInput.value = "";
+        emailInput.value = "";
+        messageInput.value = "";
+    }, 1000);
 }
 
 // event listeners for input and form submission
