@@ -78,18 +78,35 @@ function toggleSubmitBtn() {
 
 // function to submit form
 function submitForm() {
-    console.log('submitted');
-    submitBtn.textContent = "Sent!";
-    submitBtn.classList.add("sent");
-    setTimeout(() => {
-        submitBtn.classList.remove("sent");
-        submitBtn.textContent = "Send";
-        submitBtn.classList.remove("disabled");
-        submitBtn.disabled = false;
-        nameInput.value = "";
-        emailInput.value = "";
-        messageInput.value = "";
-    }, 1000);
+    createPost({"name" : nameInput.value, "email" : emailInput.value, "message" : messageInput.value});
+}
+
+function createPost(newPost) {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify({
+            name: newPost.name,
+            email: newPost.email,
+            message: newPost.message
+        })
+    })
+        .then( function (response) {
+            console.log('submitted');
+            submitBtn.textContent = "Sent!";
+            submitBtn.classList.add("sent");
+            setTimeout(() => {
+                submitBtn.classList.remove("sent");
+                submitBtn.textContent = "Send";
+                submitBtn.classList.remove("disabled");
+                submitBtn.disabled = false;
+                nameInput.value = "";
+                emailInput.value = "";
+                messageInput.value = "";
+            }, 1000);
+        })
 }
 
 // event listeners for input and form submission
