@@ -1,7 +1,6 @@
 .work-experience {
     font-size: 30px;
-    margin: 40px 0;
-    margin-bottom: 20px;
+    margin: 40px 0 20px;
     align-content: space-around;
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +17,10 @@
     margin: 0;
     align-items: center;
     flex-direction: column;
+}
+
+.work-experience__title-upper{
+    font-size: 2em;
 }
 
 .work-experience__columns {
@@ -72,6 +75,9 @@
         font-size: 7vw;
     }
 
+    .work-experience__title-upper{
+        font-size: 7.5vw;
+    }
     .work-experience__column {
         width: 45vw;
         height: 100vw;

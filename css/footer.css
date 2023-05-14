@@ -36,3 +36,93 @@
 .footer-menu__column-item2 {
     padding-left: 3vw;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all-black {
+    display: flex;
+    text-align: center;
+}
+.all-black__text {
+    font-size: 40px;
+    font-weight: 500;
+    color: #553c9a;
+    border-right: 2px solid #000;
+    animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes cursor{
+    0%, 100%{border-color: transparent;}
+    50%{border-color: #000;}
+}
+
+@keyframes typing{
+    0%{ width: 0}
+    40%{ width: 16ch;}
+    80%{ width: 16ch;}
+    90%{ width: 0;}
+    100%{ width: 0;}
+}
+
+.all-black__btn {
+    color: crimson;
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+    margin:20px auto;
+    display: block;
+    background-image: linear-gradient(to left,transparent,transparent 50%,#333333 50%,#333333);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    font: 400 18px tahoma;
+    border: 1px solid #3e8e41;
+}
+.all-black__btn:hover {
+    background-position: 0 0;
+    color:#fff;
+}
+
+.fall {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/fall.png);
+}
+
+.fall_open {
+    display: block;
+}
+
+.fall_animation {
+    animation: fall 1.5s linear infinite;
+}
+
+@media (max-width: 800px) {
+    .fall_open {
+        display: none;
+    }
+
+    .footer__button-fall {
+        display: none;
+    }
+}
+
+@keyframes fall {
+    from {
+        background-position: -20% 100%;
+    }
+    to {
+        background-position: -10% -100%;
+    }
+}

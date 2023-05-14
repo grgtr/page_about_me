@@ -3,9 +3,12 @@
         font-size: 5vw;
     }
 
+    .portfolio-block__title-upper {
+        font-size: 5.5vw;
+    }
+
     .portfolio-block__column {
-        margin: 10px;
-        margin-bottom: 5px;
+        margin: 10px 10px 5px;
         padding: 5px;
         background-color: #85DCB0;
 
@@ -58,9 +61,11 @@
         font-size: 5vw;
     }
 
+    .portfolio-block__title-upper {
+        font-size: 5.5vw;
+    }
     .portfolio-block__column {
-        margin: 4px;
-        margin-bottom: 5px;
+        margin: 4px 4px 5px;
         padding: 2px;
         background-color: #85DCB0;
 
@@ -89,8 +94,7 @@
 
 .portfolio-block {
     font-size: 30px;
-    margin: 40px 0;
-    margin-bottom: 20px;
+    margin: 40px 0 20px;
     align-content: space-around;
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +111,9 @@
     margin: 0;
     align-items: center;
     flex-direction: column;
+}
+.portfolio-block__title-upper {
+    font-size: 2em;
 }
 
 .portfolio-block__columns {
