@@ -132,7 +132,7 @@
                 <script src="js/popupgallery.js"></script>
         </section>
         <section class="forms">
-            <form class="forms-form" id="forms-form">
+            <form class="forms-form" id="forms-form" novalidate>
                 <h3 class="forms__title">Send me a message:</h3>
                 <label class="forms__label" for="name">Name:</label>
                 <input class="forms__input" type="text" placeholder="Your name" required id="name" maxlength="30">
@@ -142,6 +142,7 @@
                 <span class="input_text2-error"> </span>
                 <label for="message">Message:</label>
                 <textarea class="forms__input" placeholder="Your message" required id="message"  maxlength="500"></textarea>
+                <span class="input_text3-error"> </span>
                 <button class="forms__button" type="submit" id="submit-btn">Send</button>
             </form>
             <script src="js/forms.js"></script>

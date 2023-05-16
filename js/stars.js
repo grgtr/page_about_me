@@ -1,6 +1,5 @@
 const fallButton = document.querySelector(".footer__button-fall");
 const fall = document.querySelector(".fall");
-
 fallButton.addEventListener('click', function (evt) {
     if ((!localStorage.getItem("stars") || localStorage.getItem("stars") === "none")) {
         evt.preventDefault();

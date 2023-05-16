@@ -73,7 +73,7 @@
 
 .all-black__btn {
     color: crimson;
-    width:100px;
+    width: auto;
     text-decoration:none;
     text-align:center;
     margin:20px auto;

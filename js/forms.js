@@ -5,6 +5,7 @@ const messageInput = document.getElementById("message");
 const submitBtn = document.getElementById("submit-btn");
 const nameError = document.querySelector(".input_text1-error");
 const emailError = document.querySelector(".input_text2-error");
+const messageError = document.querySelector(".input_text3-error");
 
 // function to validate name input
 function validateName() {
@@ -47,14 +48,38 @@ function validateEmail() {
 // function to validate message input
 function validateMessage() {
     const messageValue = messageInput.value.trim();
-    const regex = /^[A-Za-zА-Яа-я\s]+$/;
+    const regex1 = /^[a-zA-Z\s]+$/;
+    const regex2 = /[а-яА-Я\s]+$/;
+    const cyrillicPattern = /^\p{Script=Cyrillic}+$/u;
+    const englishPattern = /^\p{Script=Latin}+$/u;
+    const russian = /^[а-яА-ЯёЁ\s]+$/;
+    const english = /^[a-zA-Z\s]+$/;
+    let param = -1;
+    if (russian.test(messageValue)) {
+        param = 0;
+        console.log('Contains only Russian words');
+    } else if (english.test(messageValue)) {
+        param = 1;
+        console.log('Contains only English words');
+    } else {
+        param = 2;
+        console.log('Contains both Russian and English words');
+    }
+    //console.log("cyrillic", cyrillicPattern.test(messageValue));
+    //console.log("english", englishPattern.test(messageValue));
+    //console.log("reg1", !regex1.test(messageValue));
+    //console.log("reg2", !regex2.test(messageValue));
+    //console.log("vivod", !(!regex1.test(messageValue) ^ !regex2.test(messageValue)));
     if (messageValue === "") {
+        messageError.textContent = "Message is required";
         messageInput.classList.add("error");
         return false;
-    } else if (!regex.test(messageValue)) {
+    } else if (param === -1 || param === 2) {
+        messageError.textContent = "Message can only contain letters and spaces";
         messageInput.classList.add("error");
         return false;
     } else {
+        messageError.textContent = "";
         messageInput.classList.remove("error");
         return true;
     }

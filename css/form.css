@@ -50,6 +50,11 @@
     font-size: 14px;
 }
 
+.input_text3-error {
+    color: red;
+    font-size: 14px;
+}
+
 .error {
     border: 2px solid red;
 }
