@@ -1,10 +1,14 @@
 @media (max-width: 750px) {
     .portfolio-block__title {
         font-size: 5vw;
+        transition: all 0.5s ease-in-out;
+
     }
 
     .portfolio-block__title-upper {
         font-size: 5.5vw;
+        transition: all 0.5s ease-in-out;
+
     }
 
     .portfolio-block__column {
@@ -59,10 +63,14 @@
 @media (max-width: 500px) {
     .portfolio-block__title {
         font-size: 5vw;
+        transition: all 0.5s ease-in-out;
+
     }
 
     .portfolio-block__title-upper {
         font-size: 5.5vw;
+        transition: all 0.5s ease-in-out;
+
     }
     .portfolio-block__column {
         margin: 4px 4px 5px;
@@ -111,9 +119,13 @@
     margin: 0;
     align-items: center;
     flex-direction: column;
+    transition: all 0.5s ease-in-out;
+
 }
 .portfolio-block__title-upper {
     font-size: 2em;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .portfolio-block__columns {

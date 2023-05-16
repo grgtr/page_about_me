@@ -47,12 +47,13 @@
     display: flex;
     text-align: center;
 }
+
 .all-black__text {
     font-size: 40px;
     font-weight: 500;
     color: #553c9a;
     border-right: 2px solid #000;
-    animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+    animation: cursor 1s infinite step-end, typing 15s infinite steps(14);
     white-space: nowrap;
     overflow: hidden;
 }
@@ -63,11 +64,11 @@
 }
 
 @keyframes typing{
-    0%{ width: 0}
-    40%{ width: 16ch;}
-    80%{ width: 16ch;}
-    90%{ width: 0;}
-    100%{ width: 0;}
+    0%{ width: 0ch;}
+    30%{ width: 14ch;}
+    80%{ width: 14ch;}
+    90%{ width: 0ch;}
+    100%{ width: 0ch;}
 }
 
 .all-black__btn {
@@ -92,12 +93,13 @@
 .fall {
     display: none;
     position: fixed;
-    z-index: 999;
     top: 0;
     left: 0;
+    z-index: -1;
     height: 100%;
     width: 100%;
     background-image: url(../img/fall.png);
+    background-position: 0 0;
 }
 
 .fall_open {
@@ -120,9 +122,9 @@
 
 @keyframes fall {
     from {
-        background-position: -20% 100%;
+        background-position: 0 0;
     }
     to {
-        background-position: -10% -100%;
+        background-position: 0 2000px;
     }
 }
